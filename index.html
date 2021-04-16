@@ -20,6 +20,7 @@
 </head>
 
 <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
         <a class="navbar-brand" href="index.html">MJH</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
@@ -35,15 +36,70 @@
                     <a class="nav-link" href="hemp.html">Hemp</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Blog</a>
+                    <a class="nav-link" href="#blogTitle">Blog</a>
                 </li>
             </ul>
+             <!-- booking modal button-->
             <span class="navbar-text">
-                Contact
+                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                    Book Now!
+                  </button>
             </span>
         </div>
     </nav>
-    
+     <!-- booking modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Email address</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlSelect1">Number of Guests</label>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5+</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlSelect2">Site Name</label>
+                      <select multiple class="form-control" id="exampleFormControlSelect2">
+                        <option>Memalouse</option>
+                        <option>Radio Shack</option>
+                        <option>Main House</option>
+                        <option>Teepee Pierre</option>
+                        <option>Teepee Eagle Cap</option>
+                        <option>Tent Site 1</option>
+                        <option>Tent Site 2</option>
+                        <option>Tent Site 3</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="dateInputSelector">Date</label>
+                      <input type="date" class="form-control" id="dateInputSelector" placeholder="Date">
+                    </div>
+                  </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-dark">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Carousel -->
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -85,7 +141,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6 mt-5">
-                <div class="card bg-dark text-white">
+                <div class="card bg-dark text-white border-0">
                     <img src="https://via.placeholder.com/70x40" class="card-img" alt="...">
                     <div class="card-img-overlay">
                         <h5 class="card-title">Ranch & Camp</h5>
@@ -97,14 +153,14 @@
                 </div>
             </div>
             <div class="col-sm-6 mt-5">
-                <div class="card bg-dark text-white">
+                <div class="card bg-dark text-white border-0">
                     <img src="https://via.placeholder.com/70x40" class="card-img" alt="...">
                     <div class="card-img-overlay">
                         <h5 class="card-title">Hemp</h5>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                             additional
                             content. This content is a little bit longer.</p>
-                        <p class="card-text">Last updated 3 mins ago</p>
+                        <p id="blogTitle" class="card-text">Last updated 3 mins ago</p>
                     </div>
                 </div>
             </div>
@@ -112,7 +168,7 @@
         </div>
     </div>
    
-    <div class="container mt-5">
+    <div   class="container mt-5">
         <div class="row">
             <div class="col text-center">
             <h4 class="text-center">Blog</h4>
@@ -157,19 +213,122 @@
             </div>
         </div>
     </div>
-    <footer>
-    <div class="container-fluid mt-5 bg-light">
-      <div class="row">
-        <nav class="nav flex-column">
-            <a class="nav-link active" href="index.html">Home</a>
-            <a class="nav-link" href="hemp.html">Hemp</a>
-            <a class="nav-link" href="ranchcamp.html">Ranch/Camp</a>
-            <a class="nav-link" href="blog.html">Blog</a>
-        </nav>
-     </div>
-    </div>
-    </footer>
+    <footer class="page-footer font-small mdb-color lighten-3 pt-4">
 
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+      
+          <!-- Grid row -->
+          <div class="row">
+      
+           
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none">
+      
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+      
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <p>
+                    <a href="index.html">Home</a>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="ranchcamp.html">Ranch/Camp</a>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="hemp.html">Hemp</a>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="#blogTitle">Blog</a>
+                  </p>
+                </li>
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none">
+      
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+      
+              <!-- Contact details -->
+              <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <p>
+                    <i class="fa fa-home mr-3"></i> Joseph, Oregon 97846</p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fa fa-envelope mr-3"></i> info@mojohemp.com</p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fa fa-phone mr-3"></i> 541-432-8202</p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fa fa-print mr-3"></i> 541-432-8202</p>
+                </li>
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none">
+      
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+      
+              <!-- Social buttons -->
+              <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+      
+              <!-- Facebook -->
+              <a type="button" class="btn-floating btn-fb">
+                <i class="fa fa-facebook-f"></i>
+              </a>
+              <!-- Twitter -->
+              <a type="button" class="btn-floating btn-tw">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <!-- Google +-->
+              <a type="button" class="btn-floating btn-gplus">
+                <i class="fa fa-google-plus-g"></i>
+              </a>
+              <!-- Dribbble -->
+              <a type="button" class="btn-floating btn-dribbble">
+                <i class="fa fa-dribbble"></i>
+              </a>
+      
+            </div>
+            <!-- Grid column -->
+      
+          </div>
+          <!-- Grid row -->
+      
+        </div>
+        <!-- Footer Links -->
+      
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2021 Copyright:
+          <a href="https://mtjosephhemp.com/"> mtjosephhemp.com</a>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
