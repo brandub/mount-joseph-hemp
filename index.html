@@ -41,7 +41,7 @@
             </ul>
              <!-- booking modal button-->
             <span class="navbar-text">
-                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">
                     Book Now!
                   </button>
             </span>
@@ -52,7 +52,7 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Camping and Cabin Reservation Form</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -76,20 +76,25 @@
                     <div class="form-group">
                       <label for="exampleFormControlSelect2">Site Name</label>
                       <select multiple class="form-control" id="exampleFormControlSelect2">
-                        <option>Memalouse</option>
-                        <option>Radio Shack</option>
+                        <option>Camp Morel</option>
+                        <option>Camp Alder</option>
                         <option>Main House</option>
                         <option>Teepee Pierre</option>
-                        <option>Teepee Eagle Cap</option>
-                        <option>Tent Site 1</option>
-                        <option>Tent Site 2</option>
-                        <option>Tent Site 3</option>
+                        <option>Teepee Eagle</option>
+                        <option>Alder Cabin</option>
+                        <option>Guest Cabin</option>
+                        <option>Red Cabin</option>
                       </select>
                     </div>
                     <div class="form-group">
-                      <label for="dateInputSelector">Date</label>
-                      <input type="date" class="form-control" id="dateInputSelector" placeholder="Date">
+                      <label for="dateInputSelector">Check in date</label>
+                      <input type="date" class="form-control" id="dateInputSelector" placeholder="Check in date">
                     </div>
+                    <div class="form-group">
+                      <label for="dateInputSelector">Check out date</label>
+                      <input type="date" class="form-control" id="dateInputSelector" placeholder="Check out date">
+                    </div>
+                    
                   </form>
             </div>
             <div class="modal-footer">
@@ -185,7 +190,9 @@
                         additional content. This content is a little bit longer.</p>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
+                  <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalLong">
+                    Read More
+                  </button>
                 </div>
             </div>
             <div class="card">
@@ -196,23 +203,48 @@
                     </p>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
+                  <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalLong">
+                    Read More
+                  </button>
                 </div>
             </div>
             <div class="card">
                 <img src="https://via.placeholder.com/50x40" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">New Campsites!</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to show that equal height
-                        action.</p>
+                    <h5 id="blogTitleThree" class="card-title">New Campsites!</h5>
+                    <p id="textThree" class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even <span id="hiddenSpanThree" class="display: d-none"> content than the first to show that equal height
+                        action. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius ab, voluptatibus nemo laborum similique consequuntur doloremque vero hic, possimus pariatur debitis mollitia voluptas adipisci deleniti!</span></p>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
+                  <button id="buttonBlog" type="button" class="btn btn-dark">
+                    Read More
+                  </button>
                 </div>
             </div>
         </div>
     </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Blog Example</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="bodyThree" class="modal-body">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit architecto ipsam quo quas ad nam eius in iure ducimus corporis facere, aliquam veritatis commodi neque praesentium aperiam quia necessitatibus beatae quidem minima eum qui. Quasi, odit possimus laborum vel esse facilis, obcaecati nemo temporibus, alias architecto totam exercitationem. Non corporis dolor repellendus fuga, ex nisi quaerat nihil, modi officia ullam minima? Perspiciatis mollitia ab, et laudantium consequatur dignissimos totam sapiente magni cupiditate quaerat facere omnis repudiandae nihil repellendus officia, corporis maiores libero aperiam aliquam? Omnis quia autem voluptate, quasi minima, vel laudantium repellendus asperiores qui ipsam dolore? Perferendis quae aperiam ducimus, adipisci rem nostrum, recusandae, cum exercitationem deserunt impedit necessitatibus aliquid ab maiores commodi quidem ad ex voluptate pariatur. Autem nam quos blanditiis sunt voluptate. Explicabo facere ratione accusamus vel delectus reiciendis iste qui rem perferendis architecto? Quisquam nulla quis neque, voluptate laboriosam, tempore molestiae aliquid provident natus incidunt deleniti.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
     <footer class="page-footer font-small mdb-color lighten-3 pt-4">
 
         <!-- Footer Links -->
@@ -333,6 +365,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
     
 </body>
 
