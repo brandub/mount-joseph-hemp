@@ -23,6 +23,19 @@ $(function(){
         document.querySelector("#sharedModalBody").innerHTML = blogText;
         $("#exampleModalLong").modal("show"); 
     });
+    $("#subscribeButton").click(function(){
+        document.querySelector("#emailInput").value = "Thank you!";
+    });
+    $("#submitBookButton").click(function(){
+        let checkIn = document.querySelector("#checkIn").value;
+        console.log(checkIn);
+        let checkOut = document.querySelector("#checkOut").value;
+        let guestName = document.querySelector("#guestName").value;
+        let siteSelection =document.querySelector("#siteSelection").value;
+        $("#exampleModal").modal("toggle");
+        alert("Thank you " + guestName + " for booking " + siteSelection + " Checking in on " + checkIn + " Checking out on " + checkOut + " You will receive a confirmation email shortly");
+    });
+    
     
 });
 

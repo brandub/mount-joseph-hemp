@@ -2,374 +2,405 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags always come first -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
-    <!-- Additional CSS must be placed after Bootstrap CSS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+  <!-- Additional CSS must be placed after Bootstrap CSS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
 
-    <title>Mount Joseph Hemp</title>
+  <title>Mount Joseph Hemp</title>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
-        <a class="navbar-brand" href="index.html">MJH</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
+    <a class="navbar-brand" href="index.html">MJH</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="ranchcamp.html">Ranch/Camp <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="hemp.html">Hemp</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#blogTitle">Blog</a>
+        </li>
+      </ul>
+      <!-- booking modal button-->
+      <span class="navbar-text">
+        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">
+          Book Now!
         </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="ranchcamp.html">Ranch/Camp <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="hemp.html">Hemp</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#blogTitle">Blog</a>
-                </li>
-            </ul>
-             <!-- booking modal button-->
-            <span class="navbar-text">
-                <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">
-                    Book Now!
-                  </button>
-            </span>
-        </div>
-    </nav>
-     <!-- booking modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Camping and Cabin Reservation Form</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="form-group">
-                      <label for="exampleFormControlInput1">Email address</label>
-                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleFormControlSelect1">Number of Guests</label>
-                      <select class="form-control" id="exampleFormControlSelect1">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5+</option>
-                      </select>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleFormControlSelect2">Site Name</label>
-                      <select multiple class="form-control" id="exampleFormControlSelect2">
-                        <option>Camp Morel</option>
-                        <option>Camp Alder</option>
-                        <option>Main House</option>
-                        <option>Teepee Pierre</option>
-                        <option>Teepee Eagle</option>
-                        <option>Alder Cabin</option>
-                        <option>Guest Cabin</option>
-                        <option>Red Cabin</option>
-                      </select>
-                    </div>
-                    <div class="form-group">
-                      <label for="dateInputSelector">Check in date</label>
-                      <input type="date" class="form-control" id="dateInputSelector" placeholder="Check in date">
-                    </div>
-                    <div class="form-group">
-                      <label for="dateInputSelector">Check out date</label>
-                      <input type="date" class="form-control" id="dateInputSelector" placeholder="Check out date">
-                    </div>
-                    
-                  </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-              <button type="button" class="btn btn-dark">Submit</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    <!-- Carousel -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://via.placeholder.com/70x50" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="https://via.placeholder.com/70x50" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="https://via.placeholder.com/70x50" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                </div>
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+      </span>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 mt-5">
-                <div class="card bg-dark text-white border-0">
-                    <img src="https://via.placeholder.com/70x40" class="card-img" alt="...">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Ranch & Camp</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional
-                            content. This content is a little bit longer.</p>
-                        <p class="card-text">Last updated 3 mins ago</p>
-                    </div>
-                </div>
+  </nav>
+  <!-- booking modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Camping and Cabin Reservation Form</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlInputText">Name</label>
+              <input id="guestName" type="text" class="form-control" id="exampleFormControlInputText" placeholder="Your name">
             </div>
-            <div class="col-sm-6 mt-5">
-                <div class="card bg-dark text-white border-0">
-                    <img src="https://via.placeholder.com/70x40" class="card-img" alt="...">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Hemp</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional
-                            content. This content is a little bit longer.</p>
-                        <p id="blogTitle" class="card-text">Last updated 3 mins ago</p>
-                    </div>
-                </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Number of Guests</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5+</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect2">Site Name</label>
+              <select id="siteSelection" multiple class="form-control" id="exampleFormControlSelect2">
+                <option>Camp Morel</option>
+                <option>Camp Alder</option>
+                <option>Main House</option>
+                <option>Teepee Pierre</option>
+                <option>Teepee Eagle</option>
+                <option>Alder Cabin</option>
+                <option>Guest Cabin</option>
+                <option>Red Cabin</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="dateInputSelector">Check in date</label>
+              <input id="checkIn" type="date" class="form-control" id="dateInputSelector" placeholder="Check in date">
+            </div>
+            <div class="form-group">
+              <label for="dateInputSelector">Check out date</label>
+              <input id="checkOut" type="date" class="form-control" id="dateInputSelector" placeholder="Check out date">
             </div>
 
+          </form>
         </div>
-    </div>
-   
-    <div   class="container mt-5">
-        <div class="row">
-            <div class="col text-center">
-            <h4 class="text-center">Blog</h4>
-            <p>This blog will contain the latest Ranch news and happenings. <br /> 
-                Please subscribe and follow along. </p>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button id="submitBookButton" type="button" class="btn btn-dark">Submit</button>
         </div>
-            </div>
-        <div class="card-deck">
-            <div class="card">
-                <img src="https://via.placeholder.com/50x40" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 id="blogTitleOne" class="card-title">Spring is here...</h5>
-                    <p id="textOne"  class="card-text">This blog one wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer<span id="hiddenSpanOne" class="display: d-none"> cont Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur iusto cupiditate mollitia, quia voluptatem dolores veniam officiis doloremque ut facere maiores ullam minus fuga ab enim sunt labore perferendis. Laboriosam voluptas, esse vitae illum omnis dolores, voluptate possimus accusantium voluptatibus unde aperiam numquam quidem tempora. ent than the first to show that equal height
-                          action. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius ab, voluptatibus nemo laborum similique consequuntur doloremque vero hic, possimus pariatur debitis mollitia voluptas adipisci deleniti!</span></p>
-                </div>
-                <div class="card-footer">
-                  <button id="buttonBlogOne" type="button" class="btn btn-dark">
-                    Read More
-                  </button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://via.placeholder.com/50x40" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 id="blogTitleTwo"  class="card-title">New Outdoor Shower</h5>
-                    <p id="textTwo" class="card-text">This card has supporting text below as a natural lead-in to additional content.<span id="hiddenSpanTwo" class="display: d-none"> content than the first to show that equal height
-                      action. Lorem ipsum dolor, sit amet consectetur adipisicing el Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores iste, alias velit amet esse autem ea repudiandae, reiciendis sequi quibusdam dignissimos repellat impedit in reprehenderit dolores cumque ullam officia quaerat. Velit et repellendus corrupti veritatis commodi at, accusamus aut? Optio officia nesciunt libero provident reiciendis? it. Eius ab, voluptatibus nemo laborum similique consequuntur doloremque vero hic, possimus pariatur debitis mollitia voluptas adipisci deleniti!</span>
-                    </p>
-                </div>
-                <div class="card-footer">
-                  <button id="buttonBlogTwo" type="button" class="btn btn-dark">
-                    Read More
-                  </button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://via.placeholder.com/50x40" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 id="blogTitleThree" class="card-title">New Campsites!</h5>
-                    <p id="textThree" class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even <span id="hiddenSpanThree" class="display: d-none"> content than the  Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt fugit assumenda facilis magni error iure autem architecto tempore aliquid molestiae ut eveniet corrupti quam perspiciatis voluptates deleniti, cum eius! Doloribus. first to show that equal height
-                        action. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius ab, voluptatibus nemo laborum similique consequuntur doloremque vero hic, possimus pariatur debitis mollitia voluptas adipisci deleniti!</span></p>
-                </div>
-                <div class="card-footer">
-                  <button id="buttonBlogThree" type="button" class="btn btn-dark">
-                    Read More
-                  </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">...</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div id="sharedModalBody" class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
-</div>
-    <footer class="page-footer font-small mdb-color lighten-3 pt-4">
-
-        <!-- Footer Links -->
-        <div class="container text-center text-md-left">
-      
-          <!-- Grid row -->
-          <div class="row">
-      
-           
-            <!-- Grid column -->
-      
-            <hr class="clearfix w-100 d-md-none">
-      
-            <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
-      
-              <!-- Links -->
-              <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
-      
-              <ul class="list-unstyled">
-                <li>
-                  <p>
-                    <a href="index.html">Home</a>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <a href="ranchcamp.html">Ranch/Camp</a>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <a href="hemp.html">Hemp</a>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <a href="#blogTitle">Blog</a>
-                  </p>
-                </li>
-              </ul>
-      
+  <!-- Carousel -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://via.placeholder.com/70x50" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/70x50" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/70x50" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 mt-5">
+        <a href="ranchcamp.html">
+          <div class="card bg-dark text-white border-0">
+            <img src="https://via.placeholder.com/70x40" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Ranch & Camp</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                additional
+                content. This content is a little bit longer.</p>
+              <p class="card-text">Last updated 3 mins ago</p>
             </div>
-            <!-- Grid column -->
-      
-            <hr class="clearfix w-100 d-md-none">
-      
-            <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
-      
-              <!-- Contact details -->
-              <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
-      
-              <ul class="list-unstyled">
-                <li>
-                  <p>
-                    <i class="fa fa-home mr-3"></i> Joseph, Oregon 97846</p>
-                </li>
-                <li>
-                  <p>
-                    <i class="fa fa-envelope mr-3"></i> info@mojohemp.com</p>
-                </li>
-                <li>
-                  <p>
-                    <i class="fa fa-phone mr-3"></i> 541-432-8202</p>
-                </li>
-                <li>
-                  <p>
-                    <i class="fa fa-print mr-3"></i> 541-432-8202</p>
-                </li>
-              </ul>
-      
-            </div>
-            <!-- Grid column -->
-      
-            <hr class="clearfix w-100 d-md-none">
-      
-            <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
-      
-              <!-- Social buttons -->
-              <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
-      
-              <!-- Facebook -->
-              <a type="button" class="btn-floating btn-fb">
-                <i class="fa fa-facebook-f"></i>
-              </a>
-              <!-- Twitter -->
-              <a type="button" class="btn-floating btn-tw">
-                <i class="fa fa-twitter"></i>
-              </a>
-              <!-- Google +-->
-              <a type="button" class="btn-floating btn-gplus">
-                <i class="fa fa-google-plus-g"></i>
-              </a>
-              <!-- Dribbble -->
-              <a type="button" class="btn-floating btn-dribbble">
-                <i class="fa fa-dribbble"></i>
-              </a>
-      
-            </div>
-            <!-- Grid column -->
-      
           </div>
-          <!-- Grid row -->
-      
+        </a>
+      </div>
+      <div class="col-sm-6 mt-5">
+        <a href="hemp.html">
+          <div class="card bg-dark text-white border-0">
+            <img src="https://via.placeholder.com/70x40" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Hemp</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                additional
+                content. This content is a little bit longer.</p>
+              <p id="blogTitle" class="card-text">Last updated 3 mins ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col text-center">
+        <h4 class="text-center">Blog</h4>
+        <p>This blog contains the latest Ranch news and happenings. <br />
+          Please subscribe to follow along.<br /> 
+          <input id="emailInput" type="email" placeholder="Enter email"> <button id="subscribeButton" class="btn btn-light">Submit</button></p>
+      </div>
+    </div>
+    <div class="card-deck">
+      <div class="card">
+        <img src="https://via.placeholder.com/50x40" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 id="blogTitleOne" class="card-title">Spring is here...</h5>
+          <p id="textOne" class="card-text">This blog one wider card with supporting text below as a natural lead-in to
+            additional content. This content is a little bit longer<span id="hiddenSpanOne" class="display: d-none">
+              cont Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur iusto cupiditate mollitia, quia
+              voluptatem dolores veniam officiis doloremque ut facere maiores ullam minus fuga ab enim sunt labore
+              perferendis. Laboriosam voluptas, esse vitae illum omnis dolores, voluptate possimus accusantium
+              voluptatibus unde aperiam numquam quidem tempora. ent than the first to show that equal height
+              action. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius ab, voluptatibus nemo laborum
+              similique consequuntur doloremque vero hic, possimus pariatur debitis mollitia voluptas adipisci
+              deleniti!</span></p>
         </div>
-        <!-- Footer Links -->
-      
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2021 Copyright:
-          <a href="https://mtjosephhemp.com/"> mtjosephhemp.com</a>
+        <div class="card-footer">
+          <button id="buttonBlogOne" type="button" class="btn btn-dark">
+            Read More
+          </button>
         </div>
-        <!-- Copyright -->
-      
-      </footer>
-    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-    
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/50x40" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 id="blogTitleTwo" class="card-title">New Outdoor Shower</h5>
+          <p id="textTwo" class="card-text">This card has supporting text below as a natural lead-in to additional
+            content.<span id="hiddenSpanTwo" class="display: d-none"> content than the first to show that equal height
+              action. Lorem ipsum dolor, sit amet consectetur adipisicing el Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Maiores iste, alias velit amet esse autem ea repudiandae, reiciendis sequi quibusdam
+              dignissimos repellat impedit in reprehenderit dolores cumque ullam officia quaerat. Velit et repellendus
+              corrupti veritatis commodi at, accusamus aut? Optio officia nesciunt libero provident reiciendis? it. Eius
+              ab, voluptatibus nemo laborum similique consequuntur doloremque vero hic, possimus pariatur debitis
+              mollitia voluptas adipisci deleniti!</span>
+          </p>
+        </div>
+        <div class="card-footer">
+          <button id="buttonBlogTwo" type="button" class="btn btn-dark">
+            Read More
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/50x40" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 id="blogTitleThree" class="card-title">New Campsites!</h5>
+          <p id="textThree" class="card-text">This is a wider card with supporting text below as a natural lead-in to
+            additional content. This card has even <span id="hiddenSpanThree" class="display: d-none"> content than the
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus eligendi nemo doloremque, soluta id
+              vel illum fuga nihil? Architecto nulla, dolorem consequuntur deserunt similique saepe voluptate corporis
+              adipisci rem error. first to show that equal height
+              action. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius ab, voluptatibus nemo laborum
+              similique consequuntur doloremque vero hic, possimus pariatur debitis mollitia voluptas adipisci
+              deleniti!</span></p>
+        </div>
+        <div class="card-footer">
+          <button id="buttonBlogThree" type="button" class="btn btn-dark">
+            Read More
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">...</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div id="sharedModalBody" class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <p>
+                <a href="index.html">Home</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="ranchcamp.html">Ranch/Camp</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="hemp.html">Hemp</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="#blogTitle">Blog</a>
+              </p>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+          <!-- Contact details -->
+          <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <p>
+                <i class="fa fa-home mr-3"></i> Joseph, Oregon 97846
+              </p>
+            </li>
+            <li>
+              <p>
+                <i class="fa fa-envelope mr-3"></i> info@mojohemp.com
+              </p>
+            </li>
+            <li>
+              <p>
+                <i class="fa fa-phone mr-3"></i> 541-432-8202
+              </p>
+            </li>
+            <li>
+              <p>
+                <i class="fa fa-print mr-3"></i> 541-432-8202
+              </p>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+
+          <!-- Social buttons -->
+          <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+
+          <!-- Facebook -->
+          <a type="button" class="btn-floating btn-fb">
+            <i class="fa fa-facebook-f"></i>
+          </a>
+          <!-- Twitter -->
+          <a type="button" class="btn-floating btn-tw">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <!-- Google +-->
+          <a type="button" class="btn-floating btn-gplus">
+            <i class="fa fa-google-plus-g"></i>
+          </a>
+          <!-- Dribbble -->
+          <a type="button" class="btn-floating btn-dribbble">
+            <i class="fa fa-dribbble"></i>
+          </a>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2021 Copyright:
+      <a href="https://mtjosephhemp.com/"> mtjosephhemp.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+
 </body>
 
 </html>
-
