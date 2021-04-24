@@ -41,19 +41,19 @@
       </ul>
       <!-- booking modal button-->
       <span class="navbar-text">
-        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">
+        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#Modal">
           Book Now!
         </button>
       </span>
     </div>
   </nav>
   <!-- booking modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Camping and Cabin Reservation Form</h5>
+          <h5 class="modal-title" id="ModalLabel">Camping and Cabin Reservation Form</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -61,16 +61,16 @@
         <div class="modal-body">
           <form>
             <div class="form-group">
-              <label for="exampleFormControlInputText">Name</label>
-              <input id="guestName" type="text" class="form-control" id="exampleFormControlInputText" placeholder="Your name">
+              <label for="FormControlInputText">Name</label>
+              <input id="guestName" type="text" class="form-control" id="FormControlInputText" placeholder="Your name">
             </div>
             <div class="form-group">
-              <label for="exampleFormControlInput1">Email address</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              <label for="FormControlInput1">Email address</label>
+              <input type="email" class="form-control" id="FormControlInput1" placeholder="name@.com">
             </div>
             <div class="form-group">
-              <label for="exampleFormControlSelect1">Number of Guests</label>
-              <select class="form-control" id="exampleFormControlSelect1">
+              <label for="FormControlSelect1">Number of Guests</label>
+              <select class="form-control" id="FormControlSelect1">
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -79,8 +79,8 @@
               </select>
             </div>
             <div class="form-group">
-              <label for="exampleFormControlSelect2">Site Name</label>
-              <select id="siteSelection" multiple class="form-control" id="exampleFormControlSelect2">
+              <label for="FormControlSelect2">Site Name</label>
+              <select id="siteSelection" multiple class="form-control" id="FormControlSelect2">
                 <option>Camp Morel</option>
                 <option>Camp Alder</option>
                 <option>Main House</option>
@@ -110,40 +110,40 @@
     </div>
   </div>
   <!-- Carousel -->
-  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+  <div id="carouselCaptions" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
-      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      <li data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselCaptions" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="img/mountjoseph.jpg" class="d-block img-fluid" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h4>Mount Joseph</h4>
+          <p id="carousel-caption-text">This iconic mountian looms over the home ranch at an impressive elevation of 9617ft. </p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="img/barn.jpg" class="d-block img-fluid" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h4>The old barn</h4>
+          <p id="carousel-caption-text">Built in 1927 this old barn has seen better days but remains a classic.</p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="img/mountains.jpg" class="d-block img-fluid" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          <h4>Hurricane Creek</h4>
+          <p id="carousel-caption-text">The creek that provides irrigation water to the ranch makes a dramatic exit out of the mountains.</p>
         </div>
       </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+    <a class="carousel-control-prev" href="#carouselCaptions" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+    <a class="carousel-control-next" href="#carouselCaptions" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
@@ -155,7 +155,7 @@
           <div class="card cardPop bg-dark text-white border-0">
             <img src="img/mountaincup.jpg" class="card-img" alt="mountains with cup">
             <div class="card-img-overlay">
-              <h5 class="card-title">Ranch & Camp</h5>
+              <h4 class="card-title">Ranch & Camp</h4>
               <p class="card-text">Click here to explore our ranch and camping options. #ranchlife</p>
             </div>
           </div>
@@ -166,8 +166,9 @@
           <div class="card cardPop bg-dark text-white border-0">
             <img  src="img/hempstart.jpg" class="card-img" alt="hemp plant">
             <div class="card-img-overlay">
-              <h5 class="card-title">Hemp</h5>
+              <h4 class="card-title">Hemp</h4>
               <p class="card-text">Click here to learn about our hemp operations. #hemplife</p>
+              <!--this is to get the blog link to display the page in the proper location-->
               <div id="blogTitle"></div>
             </div>
           </div>
@@ -190,7 +191,7 @@
         <img src="img/hempstarthand.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 id="blogTitleOne" class="card-title">Spring is here...</h5>
-          <p id="textOne" class="card-text">This blog one wider card with supporting text below as gjygg hghjgh hj <span id="hiddenSpanOne" class="display: d-none">
+          <p id="textOne" class="card-text"> "Spring work is going on with joyful enthusiasm." John Muir... <span id="hiddenSpanOne" class="display: d-none">
               cont Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur iusto cupiditate mollitia, quia
               voluptatem dolores veniam officiis doloremque ut facere maiores ullam minus fuga ab enim sunt labore
               perferendis. Laboriosam voluptas, esse vitae illum omnis dolores, voluptate possimus accusantium
@@ -209,8 +210,7 @@
         <img src="img/shower.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 id="blogTitleTwo" class="card-title">New Outdoor Shower</h5>
-          <p id="textTwo" class="card-text">This card has supporting text below as a natural lead-in to additional
-            content.<span id="hiddenSpanTwo" class="display: d-none"> content than the first to show that equal height
+          <p id="textTwo" class="card-text">The ranch has long needed and outdoor shower...<span id="hiddenSpanTwo" class="display: d-none"> content than the first to show that equal height
               action. Lorem ipsum dolor, sit amet consectetur adipisicing el Lorem ipsum, dolor sit amet consectetur
               adipisicing elit. Maiores iste, alias velit amet esse autem ea repudiandae, reiciendis sequi quibusdam
               dignissimos repellat impedit in reprehenderit dolores cumque ullam officia quaerat. Velit et repellendus
@@ -229,8 +229,7 @@
         <img src="img/campcooking.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 id="blogTitleThree" class="card-title">New Campsites!</h5>
-          <p id="textThree" class="card-text">This is a wider card with supporting text below as a natural lead-in to
-            additional content. This card has even <span id="hiddenSpanThree" class="display: d-none"> content than the
+          <p id="textThree" class="card-text">We have added new campsites this year and look forward too sharing with...<span id="hiddenSpanThree" class="display: d-none"> content than the
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus eligendi nemo doloremque, soluta id
               vel illum fuga nihil? Architecto nulla, dolorem consequuntur deserunt similique saepe voluptate corporis
               adipisci rem error. first to show that equal height
@@ -248,13 +247,13 @@
   </div>
 
 
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+  <!-- Modal text is populated with javascript -->
+  <div class="modal fade" id="ModalLong" tabindex="-1" role="dialog" aria-labelledby="ModalLongTitle"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">...</h5>
+          <h5 class="modal-title" id="ModalLongTitle">...</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -268,25 +267,13 @@
       </div>
     </div>
   </div>
+
   <footer class="page-footer font-small mdb-color lighten-3 pt-4">
-
-    <!-- Footer Links -->
     <div class="container text-center text-md-left">
-
-      <!-- Grid row -->
       <div class="row">
-
-
-        <!-- Grid column -->
-
         <hr class="clearfix w-100 d-md-none">
-
-        <!-- Grid column -->
         <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
-
-          <!-- Links -->
-          <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
-
+          <h5 class="font-weight-bold text-uppercase mb-4 text-nowrap">Site Map</h5>
           <ul class="list-unstyled">
             <li>
               <p>
@@ -309,84 +296,57 @@
               </p>
             </li>
           </ul>
-
         </div>
-        <!-- Grid column -->
-
+  
         <hr class="clearfix w-100 d-md-none">
 
-        <!-- Grid column -->
         <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
-
-          <!-- Contact details -->
-          <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
-
+          <h5 class="font-weight-bold text-uppercase mb-4">Contact</h5>
+  
           <ul class="list-unstyled">
             <li>
               <p>
-                <i class="fa fa-home mr-3"></i> Joseph, Oregon 97846
+                <a href="https://goo.gl/maps/fLZwg2vJpAL2M19y7" target="_blank" rel="noopener noreferrer"> <i
+                    class="fa fa-home mr-3"></i> Joseph, Oregon 97846 </a>
               </p>
             </li>
             <li>
               <p>
-                <i class="fa fa-envelope mr-3"></i> info@mojohemp.com
+                <a href="mailto:info@mojohemp.com"><i class="fa fa-envelope mr-3"></i> info@mojohemp.com</a>
               </p>
             </li>
             <li>
               <p>
-                <i class="fa fa-phone mr-3"></i> 541-432-8202
-              </p>
-            </li>
-            <li>
-              <p>
-                <i class="fa fa-print mr-3"></i> 541-432-8202
+                <a href="tel:541-432-8202"><i class="fa fa-phone mr-3"></i> 541-432-8202</a>
               </p>
             </li>
           </ul>
-
         </div>
-        <!-- Grid column -->
-
+  
         <hr class="clearfix w-100 d-md-none">
 
-        <!-- Grid column -->
         <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
-
-          <!-- Social buttons -->
-          <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
-
-          <!-- Facebook -->
+          <h5 class="font-weight-bold text-uppercase mb-4">Follow</h5>
           <a type="button" class="btn-floating btn-fb">
             <i class="fa fa-facebook-f"></i>
           </a>
-          <!-- Twitter -->
           <a type="button" class="btn-floating btn-tw">
             <i class="fa fa-twitter"></i>
           </a>
-          <!-- Google +-->
           <a type="button" class="btn-floating btn-gplus">
             <i class="fa fa-google-plus-g"></i>
           </a>
-          <!-- Dribbble -->
-          <a type="button" class="btn-floating btn-dribbble">
-            <i class="fa fa-dribbble"></i>
+          <a type="button" class="btn-floating btn-instagram">
+            <i class="fa fa-instagram"></i>
           </a>
-
         </div>
-        <!-- Grid column -->
-
       </div>
-      <!-- Grid row -->
-
     </div>
-    <!-- Footer Links -->
 
-    <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2021 Copyright:
       <a href="https://mtjosephhemp.com/"> mtjosephhemp.com</a>
     </div>
-    <!-- Copyright -->
-
+   
   </footer>
   <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>

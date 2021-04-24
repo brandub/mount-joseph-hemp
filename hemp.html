@@ -40,48 +40,51 @@
         </li>
       </ul>
       <span class="navbar-text">
-        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">
+        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#Modal">
           Book Now!
         </button>
       </span>
     </div>
   </nav>
-  <h1 class="text-center">Hemp</h1>
-  <div class="card-group mt-4">
-    <div class="card">
-      <img class="card-img-top" src="img/biomass.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Bio-Mass</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
-          This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  
+  <h3 id="hempTitle">Hemp</h3>
+  <div><img class="img-fluid" src="img/mountains.jpg" alt="">
+    <h2 id="hempTitle">Hemp</h2>
+  
+    <div id="card-group-hemp" class="card-deck mt-4 mx-1">
+      <div id="cardHemp" class="card mx-2 rounded">
+        <img class="card-img-top px-2 pt-2" src="img/biomass.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Bio-Mass</h5>
+          <p class="card-text">Our hemp biomass is organically grown at high altitude and cured to perfection. Biomass is
+            now available. To request pricing and COA’s use the form below.</p> 
+        </div>
       </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top" src="img/hempbud.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Flower</h5>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <div id="cardHemp" class="card mx-2 rounded">
+        <img class="card-img-top px-2 pt-2" src="img/hempbud.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Flower</h5>
+          <p class="card-text">Our hemp flower is organically grown at high altitude with no pesticides. Available to
+            licensed hemp sellers only, all strains federally compliant with all US hemp laws and regulations.</p>
+        </div>
       </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top" src="img/genetics.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Genetics</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
-          This card has even longer content than the first to show that equal height action.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <div id="cardHemp" class="card mx-2 rounded">
+        <img class="card-img-top px-2 pt-2" src="img/genetics.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Genetics</h5>
+          <p class="card-text">Our seeds are heirloom, stable, massive producers that test between 14% and 20% CBD on top
+            flower testing and 11-14% composite testing.</p>
+        </div>
       </div>
     </div>
   </div>
-  <div class="container col-6 mt-5">
-    <h3 class="text-center">Hemp Contact Form</h3>
-    <form class="mt-4">
+  <div class="container-fluid col-7">
+    <h3 id="hempContact" class="text-center">Hemp Contact Form</h3>
+    <form class="mt-0">
       <div class="form-row">
         <div class="form-group col-md-6">
-          <label for="inputPassword4">Name</label>
-          <input type="password" class="form-control" id="inputPassword4" placeholder="Name">
+          <label for="inputName">Name</label>
+          <input type="password" class="form-control" id="inputName" placeholder="Name">
         </div>
         <div class="form-group col-md-6">
           <label for="inputEmail4">Email</label>
@@ -92,17 +95,16 @@
         <label for="inputAddress2">Message</label>
         <textarea class="form-control" rows="3" id="inputAddress2" placeholder="Enter message here..."></textarea>
       </div>
-
-
+  
+  
       <button type="submit" class="btn btn-light">Submit</button>
     </form>
   </div>
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
+  <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Camping and Cabin Reservation Form</h5>
+          <h5 class="modal-title" id="ModalLabel">Camping and Cabin Reservation Form</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -110,16 +112,16 @@
         <div class="modal-body">
           <form>
             <div class="form-group">
-              <label for="exampleFormControlInputText">Name</label>
-              <input id="guestName" type="text" class="form-control" id="exampleFormControlInputText" placeholder="Your name">
+              <label for="FormControlInputText">Name</label>
+              <input id="guestName" type="text" class="form-control" id="FormControlInputText" placeholder="Your name">
             </div>
             <div class="form-group">
-              <label for="exampleFormControlInput1">Email address</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              <label for="FormControlInput1">Email address</label>
+              <input type="email" class="form-control" id="FormControlInput1" placeholder="name@.com">
             </div>
             <div class="form-group">
-              <label for="exampleFormControlSelect1">Number of Guests</label>
-              <select class="form-control" id="exampleFormControlSelect1">
+              <label for="FormControlSelect1">Number of Guests</label>
+              <select class="form-control" id="FormControlSelect1">
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -128,8 +130,8 @@
               </select>
             </div>
             <div class="form-group">
-              <label for="exampleFormControlSelect2">Site Name</label>
-              <select id="siteSelection" multiple class="form-control" id="exampleFormControlSelect2">
+              <label for="FormControlSelect2">Site Name</label>
+              <select id="siteSelection" multiple class="form-control" id="FormControlSelect2">
                 <option>Camp Morel</option>
                 <option>Camp Alder</option>
                 <option>Main House</option>
@@ -148,7 +150,7 @@
               <label for="dateInputSelector">Check out date</label>
               <input id="checkOut" type="date" class="form-control" id="dateInputSelector" placeholder="Check out date">
             </div>
-
+  
           </form>
         </div>
         <div class="modal-footer">
@@ -159,24 +161,11 @@
     </div>
   </div>
   <footer class="page-footer font-small mdb-color lighten-3 pt-4">
-
-    <!-- Footer Links -->
     <div class="container text-center text-md-left">
-  
-      <!-- Grid row -->
       <div class="row">
-  
-       
-        <!-- Grid column -->
-  
         <hr class="clearfix w-100 d-md-none">
-  
-        <!-- Grid column -->
         <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
-  
-          <!-- Links -->
-          <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
-  
+          <h5 class="font-weight-bold text-uppercase mb-4 text-nowrap">Site Map</h5>
           <ul class="list-unstyled">
             <li>
               <p>
@@ -195,84 +184,61 @@
             </li>
             <li>
               <p>
-                <a href="index.html#blogTitle">Blog</a>
+                <a href="#blogTitle">Blog</a>
               </p>
             </li>
           </ul>
-  
         </div>
-        <!-- Grid column -->
   
         <hr class="clearfix w-100 d-md-none">
   
-        <!-- Grid column -->
         <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
-  
-          <!-- Contact details -->
-          <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+          <h5 class="font-weight-bold text-uppercase mb-4">Contact</h5>
   
           <ul class="list-unstyled">
             <li>
               <p>
-                <i class="fa fa-home mr-3"></i> Joseph, Oregon 97846</p>
+                <a href="https://goo.gl/maps/fLZwg2vJpAL2M19y7" target="_blank" rel="noopener noreferrer"> <i
+                    class="fa fa-home mr-3"></i> Joseph, Oregon 97846 </a>
+              </p>
             </li>
             <li>
               <p>
-                <i class="fa fa-envelope mr-3"></i> info@mojohemp.com</p>
+                <a href="mailto:info@mojohemp.com"><i class="fa fa-envelope mr-3"></i> info@mojohemp.com</a>
+              </p>
             </li>
             <li>
               <p>
-                <i class="fa fa-phone mr-3"></i> 541-432-8202</p>
-            </li>
-            <li>
-              <p>
-                <i class="fa fa-print mr-3"></i> 541-432-8202</p>
+                <a href="tel:541-432-8202"><i class="fa fa-phone mr-3"></i> 541-432-8202</a>
+              </p>
             </li>
           </ul>
-  
         </div>
-        <!-- Grid column -->
   
         <hr class="clearfix w-100 d-md-none">
-  
-        <!-- Grid column -->
+
         <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
-  
-          <!-- Social buttons -->
-          <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
-  
-          <!-- Facebook -->
+          <h5 class="font-weight-bold text-uppercase mb-4">Follow</h5>
           <a type="button" class="btn-floating btn-fb">
             <i class="fa fa-facebook-f"></i>
           </a>
-          <!-- Twitter -->
           <a type="button" class="btn-floating btn-tw">
             <i class="fa fa-twitter"></i>
           </a>
-          <!-- Google +-->
           <a type="button" class="btn-floating btn-gplus">
             <i class="fa fa-google-plus-g"></i>
           </a>
-          <!-- Dribbble -->
-          <a type="button" class="btn-floating btn-dribbble">
-            <i class="fa fa-dribbble"></i>
+          <a type="button" class="btn-floating btn-instagram">
+            <i class="fa fa-instagram"></i>
           </a>
-  
         </div>
-        <!-- Grid column -->
-  
       </div>
-      <!-- Grid row -->
-  
     </div>
-    <!-- Footer Links -->
-  
-    <!-- Copyright -->
+
     <div class="footer-copyright text-center py-3">© 2021 Copyright:
       <a href="https://mtjosephhemp.com/"> mtjosephhemp.com</a>
     </div>
-    <!-- Copyright -->
-  
+   
   </footer>
   
 

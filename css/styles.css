@@ -1,3 +1,16 @@
 .cardPop:hover {
-    transform:scale(1.05);
+    transform:translateY(-5px);
+}
+#carousel-caption-text {
+    font-size: 1.25em ;
+}
+#card-group-hemp {
+    position:relative;
+    bottom: 200px;
+}
+#hempTitle {
+   text-align: center;
+}
+#cardHemp:hover {
+    transform:translateY(-5px);
 }
